@@ -37,10 +37,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump-Box-Provisioner | Gateway  | 10.0.0.1   | Linux (Ubuntu 18.04 LTS)          |
-| Web-1     |          |            | Linux (Ubuntu 18.04 LTS)                 |
-| Web-2     |          |            | Linux (Ubuntu 18.04 LTS)               |
-| Web-3     |          |            | Linux (Ubuntu 18.04 LTS)                |
-| ELK-Machine |          |          | Linux (Ubuntu 18.04 LTS)                   |  
+| Web-1     |          |            | Linux (ubuntu 18.04 LTS)                 |
+| Web-2     |          |            | Linux (ubuntu 18.04 LTS)               |
+| Web-3     |          |            | Linux (ubuntu 18.04 LTS)                |
+| ELK-Machine |          |          | Linux (ubuntu 18.04 LTS)                   |  
 
 ### Access Policies
 
