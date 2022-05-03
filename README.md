@@ -71,7 +71,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![ELK](https://user-images.githubusercontent.com/96896057/166449868-adf6cf51-aa78-4be4-a4a8-5a60f23092e3.png)
+![ELKdockerps](https://user-images.githubusercontent.com/96896057/166450384-9430015e-f25a-46cc-bdca-6b22d8eedcbd.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
