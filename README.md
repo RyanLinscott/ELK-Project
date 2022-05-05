@@ -45,7 +45,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Web-1     |    DVWA Server      | 10.0.0.9         | Linux (ubuntu 18.04 LTS)                 |
 | Web-2     |    DVWA Server      | 10.0.0.10        | Linux (ubuntu 18.04 LTS)               |
 | Web-3     |    DVWA Server      | 10.0.0.12        | Linux (ubuntu 18.04 LTS)                |
-| ELK-Machine |  DWVA Server        | 10.1.0.4       | Linux (ubuntu 18.04 LTS)                   |  
+| ELK-Machine |  ELK Stack       | 10.1.0.4       | Linux (ubuntu 18.04 LTS)                   |  
 
 ### Access Policies
 
