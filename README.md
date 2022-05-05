@@ -17,7 +17,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 - [filebeatmteric-playbook](https://github.com/RyanLinscott/ELK-Project/blob/main/Playbook%20Files/filebeat-metricbeat-playbook.yml)
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
