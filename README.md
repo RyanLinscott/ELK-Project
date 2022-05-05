@@ -7,9 +7,9 @@ The files in this repository were used to configure the network depicted below.
 
 TODO:Erase original network topology.
 ```
-#![AzureREDXCorp drawio](https://user-images.githubusercontent.com/96896057/166852549-caedb43a-34d2-4dc1-8ccb-672387504423.png)
+![AzureXCorp_Red drawio](https://user-images.githubusercontent.com/96896057/167031488-67bf2d55-cdf0-460e-a4c7-65c991ee610e.png)
 ```
-![AzureREDXCorp+ELK drawio](https://user-images.githubusercontent.com/96896057/167029691-bf066d9a-188e-4b5a-8276-88a43b9ba31e.png)
+![AzureREDXCorp+ELK drawio](https://user-images.githubusercontent.com/96896057/167030555-d2cb946b-74c5-415d-af91-190106ea026e.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the "filebeatmetric-playbook" file may be used to install only certain pieces of it, such as Filebeat.
 
