@@ -1,0 +1,29 @@
+---
+- name: Config Web WM with Docker
+  hosts: webservers
+  become: true
+  tasks:
+    - name: docker.io
+      apt:
+        update_cache: yes
+        name: docker.io
+        state: present
+    - name: Install python-pip3
+      apt:
+        name: python3-pip
+        state: present
+    - name: Install Docker Python Module
+      pip:
+        name: docker
+        state: present
+    - name: download and launch a Docker Web Container
+      docker_container:
+        name: dvwa
+        image: cyberxsecurity/dvwa
+        state: started
+        restart_policy: always
+        published_ports: 80:80
+    - name: Enable Docker Service
+      systemd:
+        name: docker
+        enabled:
