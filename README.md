@@ -9,6 +9,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
+[Configure Docker](https://github.com/RyanLinscott/ELK-Project/blob/main/Installation%20Files/Ansible.yml)
 [Install-docker.io_python3.pip](https://github.com/RyanLinscott/ELK-Project/blob/main/Installation%20Files/Installdocker.io_python3-pip.yml)
 [Install-ELK](https://github.com/RyanLinscott/ELK-Project/blob/main/Installation%20Files/Install-ELK.yml)
 [filebeat-configuration](https://github.com/RyanLinscott/ELK-Project/blob/main/Configuration%20Files/FileBeatConfig.yml)
