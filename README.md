@@ -5,6 +5,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
+TODO: Update ELK draw.io with ELK PRIVATE IP!!!!!!
 ![AzureREDXCorp+ELK drawio](https://user-images.githubusercontent.com/96896057/167030555-d2cb946b-74c5-415d-af91-190106ea026e.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the "filebeatmetric-playbook" file may be used to install only certain pieces of it, such as Filebeat.
