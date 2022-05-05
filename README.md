@@ -5,10 +5,6 @@
 
 The files in this repository were used to configure the network depicted below.
 
-TODO:Erase original network topology.
-```
-![AzureXCorp_Red drawio](https://user-images.githubusercontent.com/96896057/167031488-67bf2d55-cdf0-460e-a4c7-65c991ee610e.png)
-```
 ![AzureREDXCorp+ELK drawio](https://user-images.githubusercontent.com/96896057/167030555-d2cb946b-74c5-415d-af91-190106ea026e.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the "filebeatmetric-playbook" file may be used to install only certain pieces of it, such as Filebeat.
@@ -57,8 +53,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - _TODO: Add whitelisted IP addresses_
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by the Jump-Box-Provisioner located at 20.213.123.161
 
 A summary of the access policies in place can be found in the table below.
 
@@ -84,10 +79,13 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- 10.0.0.9
+- 10.0.0.10
+-10.0.0.12
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+- Filebeat
+- Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
