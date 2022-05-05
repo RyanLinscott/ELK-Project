@@ -64,9 +64,9 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Allow-SSH-from-Home | No              | Personal Host IP Only    |
+|      Allow-SSH-from-Jump   |     No                | 20.213.123.161           |
+|     Allow-80-To-Load-Balancer     |     No                |          Personal Host IP Only            |
 
 ### Elk Configuration
 
