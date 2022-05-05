@@ -5,9 +5,11 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
-# TODO: Update draw.io with ELK and ADD ELK-STACK VNET
-![AzureREDXCorp drawio](https://user-images.githubusercontent.com/96896057/166852549-caedb43a-34d2-4dc1-8ccb-672387504423.png)
+TODO:Erase original network topology.
+```
+#![AzureREDXCorp drawio](https://user-images.githubusercontent.com/96896057/166852549-caedb43a-34d2-4dc1-8ccb-672387504423.png)
+```
+![AzureREDXCorp+ELK drawio](https://user-images.githubusercontent.com/96896057/167029691-bf066d9a-188e-4b5a-8276-88a43b9ba31e.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the "filebeatmetric-playbook" file may be used to install only certain pieces of it, such as Filebeat.
 
