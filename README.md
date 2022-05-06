@@ -94,10 +94,20 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the Install-ELK.yml file to /etc/ansible/roles directory.
-- Update the /etc/ansible/hosts file to include the ELK stack private IP, example below:
+- Copy the [Install-ELK.yml](https://github.com/RyanLinscott/ELK-Project/blob/main/Installation%20Files/Install-ELK.yml) file to /etc/ansible/roles directory.
+- Update the /etc/ansible/hosts file to include the ELK stack private IP, as seen below:
 ![hostsconfiguration](https://user-images.githubusercontent.com/96896057/167226313-7bb7ffae-aaef-4356-9525-908f10c86c27.png)
-- TODO:Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Run the playbook using:
+  ```
+  ansible-playbook /etc/ansible/roles/Install-ELK.yml
+  ```
+ - Navigate to this site to check installation worked as expected.
+    ```
+    "http://"insert.public.elk.ip":5601/app/kibana" 
+    ```
+
+- Your site should display a page similar to this:
+![KibanaHomeForGitHub](https://user-images.githubusercontent.com/96896057/167226940-64d40d32-d022-4657-bebf-ffeda7eadd6f.png)
 
 _TODO: Answer the following questions to fill in the blanks:_
 - TODO:_Which file is the playbook? Where do you copy it?_
