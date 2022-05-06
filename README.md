@@ -88,14 +88,18 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- Filebeat is a lightweight shipper that is used for forwarding logs and files between containers or servers to one centralized location.  This information is sent to the ELK Stack where it can easily be accessed by the servers administrator.
+- Metricbeat gathers metrics and statistics and sends them to a centralized location for administrators to view information pertaining to who is accessing servers.  It will show a wide range of statistics from the operating system those accessing the server are using to what country the users accessing the server are from.  All this information is sent to the ELK Stack where it can easily be viewed by the servers administrator.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
 - Copy the [Install-ELK.yml](https://github.com/RyanLinscott/ELK-Project/blob/main/Installation%20Files/Install-ELK.yml) file to /etc/ansible/roles directory.
-- Update the /etc/ansible/hosts file to include the ELK stack private IP, as seen below:
+  ```
+  sudo docker cp Install-ELK.yml <container.name>:/etc/ansible/roles/Install-ELK.yml
+  ```
+- Update the /etc/ansible/hosts file to include the ELK stack private IP as well as indicating what version of python is to be used, as seen below:
 ![hostsconfiguration](https://user-images.githubusercontent.com/96896057/167226313-7bb7ffae-aaef-4356-9525-908f10c86c27.png)
 - Run the playbook using:
   ```
@@ -103,7 +107,7 @@ SSH into the control node and follow the steps below:
   ```
  - Navigate to this site to check installation worked as expected.
     ```
-    "http://"insert.public.elk.ip":5601/app/kibana" 
+    "http://"your.public.elk.ip":5601/app/kibana" 
     ```
 
 - Your site should display a page similar to this:
