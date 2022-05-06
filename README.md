@@ -49,7 +49,7 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump-Box-Provisoner can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- Personal Home IP (redacted for security)
+- Personal Home IP (*redacted for security/confidentiality)
 
 Machines within the network can only be accessed by the Jump-Box-Provisioner located at 20.213.123.161
 
@@ -57,9 +57,9 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Allow-SSH-from-Home | No              | Personal IP Only    |
+| Allow-SSH-from-Home | No              | Personal Home IP Only    |
 |      Allow-SSH-from-Jump   |     No                | 20.213.123.161           |
-|     Allow-80-To-Load-Balancer     |     No                |          Personal IP Only            |
+|     Allow-80-To-Load-Balancer     |     No                |          Personal Home IP Only            |
 |
 
 ### Elk Configuration
