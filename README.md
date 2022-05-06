@@ -5,7 +5,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![AzureREDXCorp+ELK drawio](https://user-images.githubusercontent.com/96896057/167038237-fe1ec561-36d0-47ed-970e-2441d11c7a69.png)
+![AzureREDXCorp+ELK drawio](https://user-images.githubusercontent.com/96896057/167216523-6283c54a-3ba2-4fae-b1c8-f7b6bbe01b56.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the "filebeatmetric-playbook" file may be used to install only certain pieces of it, such as Filebeat.
 - [Configure hosts](https://github.com/RyanLinscott/ELK-Project/blob/main/Configuration%20Files/hosts.cfg)
@@ -101,6 +101,6 @@ SSH into the control node and follow the steps below:
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- Which URL do you navigate to in order to check that the ELK server is running? [ELK Server](http://20.115.137.250:5601/app/kibana)
+- Which URL do you navigate to in order to check that the ELK server is running? [ELK Server](http://20.125.27.147:5601/app/kibana)
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
