@@ -59,7 +59,7 @@ A summary of the access policies in place can be found in the table below.
 |----------|---------------------|----------------------|
 | Allow-SSH-from-Home | No              | Personal IP Only    |
 |      Allow-SSH-from-Jump   |     No                | 20.213.123.161           |
-|     Allow-80-To-Load-Balancer     |     No                |          Personal Host IP Only            |
+|     Allow-80-To-Load-Balancer     |     No                |          Personal IP Only            |
 |
 
 ### Elk Configuration
