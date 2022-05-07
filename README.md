@@ -95,11 +95,11 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the [Install-ELK.yml](https://github.com/RyanLinscott/ELK-Project/blob/main/Installation%20Files/Install-ELK.yml) file to /etc/ansible/roles directory.
+- Copy the [Install-ELK.yml](https://github.com/RyanLinscott/ELK-Project/blob/main//Files/Installation%20Files/Install-ELK.yml) file to /etc/ansible/roles directory.
   ```
   sudo docker cp Install-ELK.yml "container.name":/etc/ansible/roles/Install-ELK.yml
   ```
-- Update the [/etc/ansible/hosts](https://github.com/RyanLinscott/ELK-Project/blob/main/Configuration%20Files/hosts.cfg) file to include the ELK stack private IP as well as indicating what version of python is to be used, as seen below:
+- Update the [/etc/ansible/hosts](https://github.com/RyanLinscott/ELK-Project/blob/main/Files/Configuration%20Files/hosts.cfg) file to include the ELK stack private IP as well as indicating what version of python is to be used, as seen below:
 ![hostsconfiguration](https://user-images.githubusercontent.com/96896057/167226313-7bb7ffae-aaef-4356-9525-908f10c86c27.png)
 - Run the playbook using:
   ```
@@ -109,13 +109,13 @@ SSH into the control node and follow the steps below:
 
 - To install filebeat and metricbeat:
 
-  Copy [filebeat-metricbeat-playbook](https://github.com/RyanLinscott/ELK-Project/blob/main/Playbook%20Files/filebeat-metricbeat-playbook.yml) to the /etc/ansible/roles directory and then run
+  Copy [filebeat-metricbeat-playbook](https://github.com/RyanLinscott/ELK-Project/blob/main/Files/Playbook%20Files/filebeat-metricbeat-playbook.yml) to the /etc/ansible/roles directory and then run
   ```
   ansible-playbook /etc/ansible/roles/filebeat-metricbeat.yml
   ```
 
 
-- In order to make ansible run the playbook on a specific machine you must update the [/etc/ansible/files/metricbeat-config.yml](https://github.com/RyanLinscott/ELK-Project/blob/main/Configuration%20Files/MetricbeatConfig.yml) adding in your personal ELK Stack private IP to the "Kibana" and "Elasticsearch output" areas.  The result should be similar to the images below:
+- In order to make ansible run the playbook on a specific machine you must update the [/etc/ansible/files/metricbeat-config.yml](https://github.com/RyanLinscott/ELK-Project/blob/main/Files/Configuration%20Files/MetricbeatConfig.yml) adding in your personal ELK Stack private IP to the "Kibana" and "Elasticsearch output" areas.  The result should be similar to the images below:
 ![metricbeat addedELKprivate](https://user-images.githubusercontent.com/96896057/167229512-16574e11-77c7-44ba-93b6-4d1fa2ca715a.png)
 ![metricbeat addedto elasticsearchoutput](https://user-images.githubusercontent.com/96896057/167229516-c7db0cfa-fe04-49b5-81a9-707791eddddb.png)
 
