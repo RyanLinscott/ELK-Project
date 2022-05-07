@@ -7,7 +7,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![AzureREDXCorp+ELK drawio](https://user-images.githubusercontent.com/96896057/167216523-6283c54a-3ba2-4fae-b1c8-f7b6bbe01b56.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the "filebeatmetric-playbook" file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the "filebeat-metric-playbook" file may be used to install only certain pieces of it, such as Filebeat.
 - [Configure hosts](https://github.com/RyanLinscott/ELK-Project/blob/main/Configuration%20Files/hosts.cfg)
 - [Configure Ansible](https://github.com/RyanLinscott/ELK-Project/blob/main/Configuration%20Files/Ansible.cfg)
 - [Install Ansible and Configure Docker](https://github.com/RyanLinscott/ELK-Project/blob/main/Installation%20Files/Ansible.yml)
@@ -97,32 +97,25 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the [Install-ELK.yml](https://github.com/RyanLinscott/ELK-Project/blob/main/Installation%20Files/Install-ELK.yml) file to /etc/ansible/roles directory.
   ```
-  sudo docker cp Install-ELK.yml <container.name>:/etc/ansible/roles/Install-ELK.yml
+  sudo docker cp Install-ELK.yml "container.name":/etc/ansible/roles/Install-ELK.yml
   ```
-- Update the /etc/ansible/hosts file to include the ELK stack private IP as well as indicating what version of python is to be used, as seen below:
+- Update the [/etc/ansible/hosts](https://github.com/RyanLinscott/ELK-Project/blob/main/Configuration%20Files/hosts.cfg) file to include the ELK stack private IP as well as indicating what version of python is to be used, as seen below:
 ![hostsconfiguration](https://user-images.githubusercontent.com/96896057/167226313-7bb7ffae-aaef-4356-9525-908f10c86c27.png)
 - Run the playbook using:
   ```
   ansible-playbook /etc/ansible/roles/Install-ELK.yml
   ```
- - Navigate to this site to check installation worked as expected.
-    ```
-    "http://"your.public.elk.ip":5601/app/kibana" 
-    ```
-
-- Your site should display a page similar to this:
-![KibanaHomeForGitHub](https://user-images.githubusercontent.com/96896057/167226940-64d40d32-d022-4657-bebf-ffeda7eadd6f.png)
 
 
 - To install filebeat and metricbeat:
 
-Copy [filebeat-metricbeat-playbook](https://github.com/RyanLinscott/ELK-Project/blob/main/Playbook%20Files/filebeat-metricbeat-playbook.yml) to the /etc/ansible/roles directory and then run
-```
-ansible-playbook /etc/ansible/roles/filebeat-metricbeat.yml
-```
+  Copy [filebeat-metricbeat-playbook](https://github.com/RyanLinscott/ELK-Project/blob/main/Playbook%20Files/filebeat-metricbeat-playbook.yml) to the /etc/ansible/roles directory and then run
+  ```
+  ansible-playbook /etc/ansible/roles/filebeat-metricbeat.yml
+  ```
 
 
-- In order to make ansible run the playbook on a specific machine you must update the /etc/ansible/files/metricbeat-config.yml adding in your personal ELK Stack private IP to the "Kibana" and "Elasticsearch output" areas.  The result should be similar to the images below:
+- In order to make ansible run the playbook on a specific machine you must update the [/etc/ansible/files/metricbeat-config.yml](https://github.com/RyanLinscott/ELK-Project/blob/main/Configuration%20Files/MetricbeatConfig.yml) adding in your personal ELK Stack private IP to the "Kibana" and "Elasticsearch output" areas.  The result should be similar to the images below:
 ![metricbeat addedELKprivate](https://user-images.githubusercontent.com/96896057/167229512-16574e11-77c7-44ba-93b6-4d1fa2ca715a.png)
 ![metricbeat addedto elasticsearchoutput](https://user-images.githubusercontent.com/96896057/167229516-c7db0cfa-fe04-49b5-81a9-707791eddddb.png)
 
@@ -130,5 +123,10 @@ ansible-playbook /etc/ansible/roles/filebeat-metricbeat.yml
 
 
 
-- Which URL do you navigate to in order to check that the ELK server is running? 
+- Once done navigate to the URL below, inputing your ELK Servers public IP in place of "insert.public.ip" 
   - http://"insert.public.elk.ip":5601/app/kibana
+  
+
+
+- Your site should display a page similar to this:
+![KibanaHomeForGitHub](https://user-images.githubusercontent.com/96896057/167226940-64d40d32-d022-4657-bebf-ffeda7eadd6f.png)
