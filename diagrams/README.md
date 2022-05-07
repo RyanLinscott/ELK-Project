@@ -1,0 +1,2 @@
+## DIAGRAMS
+These two diagrams show the connections of the XCorp_Red_Net before and after the addition of the ELK server.  Utilizing a strict set of  security rules denoted by the firewall ensures that only my own personal host computer has access to this network.
