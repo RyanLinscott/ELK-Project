@@ -18,6 +18,7 @@ The files used are listed below for convenience:
 - [filebeat-configuration](https://github.com/RyanLinscott/ELK-Project/blob/main/linux/FileBeatConfig.yml)
 - [metricbeat-configuration](https://github.com/RyanLinscott/ELK-Project/blob/main/linux/MetricbeatConfig.yml)
 - [filebeat-playbook](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/YAML%20Files/filebeat-metricbeat-playbook.yml)
+- [metricbeat-playbook](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/YAML%20Files/metricbeat-playbook.yml)
 - [filebeat-metricbeat-playbook](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/YAML%20Files/filebeat-playbook.yml)
 
 This document contains the following details:
