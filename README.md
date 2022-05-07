@@ -13,12 +13,12 @@ The files used are listed below for convenience:
 
 - [Configure hosts](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/hosts.cfg)
 - [Configure Ansible](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/Ansible.cfg)
-- [Install Ansible and Configure Docker](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/Ansible.yml)
-- [Install-ELK](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/Install-ELK.yml)
+- [Install Ansible and Configure Docker](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/YAML%20Files/Ansible.yml)
+- [Install-ELK](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/YAML%20Files/Install-ELK.yml)
 - [filebeat-configuration](https://github.com/RyanLinscott/ELK-Project/blob/main/linux/FileBeatConfig.yml)
 - [metricbeat-configuration](https://github.com/RyanLinscott/ELK-Project/blob/main/linux/MetricbeatConfig.yml)
-- [filebeat-playbook](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/filebeat-playbook.yml)
-- [filebeat-metricbeat-playbook](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/filebeat-metricbeat-playbook.yml)
+- [filebeat-playbook](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/YAML%20Files/filebeat-metricbeat-playbook.yml)
+- [filebeat-metricbeat-playbook](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/YAML%20Files/filebeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topology
