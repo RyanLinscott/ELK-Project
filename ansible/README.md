@@ -1,0 +1,2 @@
+## ANSIBLE
+Contained within this folder is a combination of configuration files for ansible and docker.  Also featured are the playbooks used to quickly set up three vulnerable Web servers and connect them to a ELK server for monitoring.
