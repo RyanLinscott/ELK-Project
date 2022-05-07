@@ -98,7 +98,7 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the [Install-ELK](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/Install-ELK.yml) file to /etc/ansible/roles directory.
+- Copy the [Install-ELK](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/YAML%20Files/Install-ELK.yml) file to /etc/ansible/roles directory.
   ```
   sudo docker cp Install-ELK.yml "container.name":/etc/ansible/roles/Install-ELK.yml
   ```
@@ -111,8 +111,7 @@ SSH into the control node and follow the steps below:
 
 
 - To install filebeat and metricbeat:
-
-  Copy [filebeat-metricbeat-playbook](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/filebeat-metricbeat-playbook.yml) to the /etc/ansible/roles directory and then run
+  Copy [filebeat-metricbeat-playbook](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/YAML%20Files/filebeat-playbook.yml) to the /etc/ansible/roles directory and then run
   ```
   ansible-playbook /etc/ansible/roles/filebeat-metricbeat.yml
   ```
