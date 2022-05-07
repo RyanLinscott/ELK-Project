@@ -132,5 +132,3 @@ ansible-playbook /etc/ansible/roles/filebeat-metricbeat.yml
 
 - Which URL do you navigate to in order to check that the ELK server is running? 
   - http://"insert.public.elk.ip":5601/app/kibana
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
