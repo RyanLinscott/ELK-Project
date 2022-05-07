@@ -1,2 +1,2 @@
 ## ANSIBLE
-Contained within this folder is a combination of configuration files for ansible and docker.  Also featured are the playbooks used to quickly set up three vulnerable Web servers and connect them to a ELK server for monitoring.
+Contained within this folder is a combination of configuration files for ansible and docker.  Also featured are the playbooks used to quickly set up three vulnerable Web servers and connect them to a ELK server for monitoring.  Please note that within the files contained insde the  _"YAML Files"_ folder there is a playbook which can be used to install both _"Filebeat"_ and _"Metricbeat"_ simultaneously and to install _"Metricbeat"_ by itself will require some editing of the file.
