@@ -113,9 +113,23 @@ SSH into the control node and follow the steps below:
 - Your site should display a page similar to this:
 ![KibanaHomeForGitHub](https://user-images.githubusercontent.com/96896057/167226940-64d40d32-d022-4657-bebf-ffeda7eadd6f.png)
 
-_TODO: Answer the following questions to fill in the blanks:_
-- TODO:_Which file is the playbook? Where do you copy it?_
-- _TODO:Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+
+- To install filebeat and metricbeat:
+
+Copy [filebeat-metricbeat-playbook](https://github.com/RyanLinscott/ELK-Project/blob/main/Playbook%20Files/filebeat-metricbeat-playbook.yml) to the /etc/ansible/roles directory and then run
+```
+ansible-playbook /etc/ansible/roles/filebeat-metricbeat.yml
+```
+
+
+- In order to make ansible run the playbook on a specific machine you must update the /etc/ansible/files/metricbeat-config.yml adding in your personal ELK Stack private IP to the "Kibana" and "Elasticsearch output" areas.  The result should be similar to the images below:
+![metricbeat addedELKprivate](https://user-images.githubusercontent.com/96896057/167229512-16574e11-77c7-44ba-93b6-4d1fa2ca715a.png)
+![metricbeat addedto elasticsearchoutput](https://user-images.githubusercontent.com/96896057/167229516-c7db0cfa-fe04-49b5-81a9-707791eddddb.png)
+
+
+
+
+
 - Which URL do you navigate to in order to check that the ELK server is running? 
   - http://"insert.public.elk.ip":5601/app/kibana
 
