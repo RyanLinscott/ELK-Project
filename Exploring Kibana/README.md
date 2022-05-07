@@ -31,13 +31,15 @@ Now that you have a feel for the data, Let's dive a bit deeper. Look at the char
 ![UniqueVisitorstoAverageBytes](https://user-images.githubusercontent.com/96896057/167231829-c0526620-4903-4d37-81dc-e89595b06936.png)
 
 In your own words, is there anything that seems potentially strange about this activity?
+- The intersting thing about this data is that the unique user was extremely low at only 1, yet the amount of bytes being used is over 19,000.  At all other times with multiple unique users the average byte count was not even half that!
+
 Filter the data by this event.
 
 
-- What is the timestamp for this event?
-- What kind of file was downloaded?
-- From what country did this activity originate?
-- What HTTP response codes were encountered by this visitor?
+- What is the timestamp for this event? 2022-05-06 9:00
+- What kind of file was downloaded? deb
+- From what country did this activity originate? Turkey
+- What HTTP response codes were encountered by this visitor? 200
 - Switch to the Kibana Discover page to see more details about this activity.
 
 
