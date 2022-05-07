@@ -8,6 +8,9 @@ The files in this repository were used to configure the network depicted below.
 ![AzureREDXCorp+ELK drawio](https://user-images.githubusercontent.com/96896057/167216523-6283c54a-3ba2-4fae-b1c8-f7b6bbe01b56.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the "filebeat-metric-playbook" file may be used to install only certain pieces of it, such as Filebeat.
+
+The files used are listed below for convenience:
+
 - [Configure hosts](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/hosts.cfg)
 - [Configure Ansible](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/Ansible.cfg)
 - [Install Ansible and Configure Docker](https://github.com/RyanLinscott/ELK-Project/blob/main/ansible/Ansible.yml)
